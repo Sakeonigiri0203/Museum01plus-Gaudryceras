@@ -96,37 +96,34 @@
       }
     }
 
-      .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          .design-item {
+      display: flex;
       gap: 24px;
-      margin-top: 24px;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
     }
     
-    .gallery-item {
-      background: rgba(255,255,255,0.05);
-      border-radius: 14px;
-      padding: 16px;
-      text-align: center;
-    }
-    
-    .gallery-item img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 12px;
+    .design-item img {
+      width: 320px;
+      max-width: 100%;
+      border-radius: 12px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.3);
     }
     
-    .gallery-item h3 {
-      margin: 10px 0 8px;
-      font-size: 1.1rem;
+    .design-text {
+      flex: 1;
+      min-width: 240px;
+    }
+    
+    .design-text h3 {
+      margin-top: 0;
       color: #e6c8a0;
     }
     
-    .gallery-item p {
-      font-size: 0.95rem;
-      color: #d9c7b0;
-    }  
+    .design-text p {
+      margin-bottom: 20px;
+    } 
   </style>
 </head>
 <body>
@@ -187,8 +184,6 @@
         ここでは、特典としてコースターを作るうえで、いくつか生み出したデザイン案がありましたので、それらをここに設置します。
         お気に入りの画像がありましたら、上の画像と同様にダウンロードもできますので、壁紙などにお使いください。
       </p>
-
-    <div class="gallery">
 
       <div class="gallery-item">
         <img src="imageG-1.jpg" alt="プロトタイプ01" />
@@ -291,7 +286,6 @@
         </a>
       </div>
       
-  </div>
 </section>
     
 
