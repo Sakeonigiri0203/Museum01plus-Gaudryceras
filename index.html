@@ -95,6 +95,24 @@
         text-align: center;
       }
     }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+      transition: 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
   </style>
 </head>
 <body>
@@ -148,6 +166,33 @@
         理学院専門科目・大学院共通科目 博物館コミュニケーション特論　北大生企画グッズ
       </p>
     </section>
+
+    <section class="card">
+      <h2>～おまけ～　試作デザインギャラリー</h2>
+      <p>
+        このコースターはいくつかのデザインから1つだけ選ばれたものです。
+        ここでは、コースターのデザインには使用しなかったが、開発をしていくなかで生まれたものたちで、せっかくの機会なので、ここに展示いたします。
+        それでは、ごゆっくりどうぞ。
+      </p>
+    <div class="gallery">
+
+      <img src="imageG-1.jpg" alt="プロトタイプ1" />
+
+      <img src="imageG-2.jpg" alt="プロトタイプ2" /> 
+    
+      <img src="imageG-3.jpg" alt="プロトタイプ3" />
+ 
+      <img src="imageG-4.jpg" alt="プロトタイプ4" />
+    
+      <img src="imageG-5.jpg" alt="プロトタイプ5" />
+    
+      <img src="imageG-6.jpg" alt="プロトタイプ6" />
+  
+      <img src="imageG-7.jpg" alt="プロトタイプ7" />
+    
+      <img src="imageG-8.jpg" alt="プロトタイプ8" />
+    </div>
+  </section>
 
     <footer>
       Gaudryceras tenuiliratum Museum Page
